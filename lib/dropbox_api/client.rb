@@ -18,6 +18,10 @@ module DropboxApi
       end
     end
 
+    def bearer
+      @connection_builder.bearer
+    end
+
     def middleware
       @connection_builder.middleware
     end

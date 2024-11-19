@@ -31,7 +31,7 @@ module DropboxApi
       @on_token_refreshed.call(@access_token.to_hash) if @on_token_refreshed
     end
 
-    private def bearer
+    def bearer
       @oauth_bearer or oauth_bearer_from_access_token
     end
 
